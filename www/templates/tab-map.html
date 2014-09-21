@@ -1,0 +1,32 @@
+<!--
+<ion-view title="Dashboard">
+  <ion-content class="padding">
+    <h1>{{TabName}}</h1>
+  </ion-content>
+</ion-view>
+-->
+
+<ion-view title="Map">
+    <google-map title="Map" center="map.center" draggable="true" zoom="map.zoom" options="map.options">
+        <marker coords="marker0.coords" options="marker0.options" events="marker0.events" idkey="marker0.id">
+            <marker-label content="marker0.title" anchor="2 0" class="marker-labels"/>
+            <window show="show">
+                <div>{{title0}}</div>
+            </window>
+        </marker>
+        <marker coords="marker1.coords" options="marker1.options" events="marker1.events" idkey="marker1.id">
+            <marker-label content="marker1.title" anchor="2 2" class="marker-labels"/>
+            <window show="show" templateUrl="templates/window.html">
+                <div>{{title1}}</div>
+            </window>
+        </marker>
+        <marker icon="marker2.icon" coords="marker2.coords" options="marker2.options" events="marker2.events" idkey="marker2.id">
+        </marker>
+        <marker icon="marker3.icon" coords="marker3.coords" options="marker3.options" events="marker3.events" idkey="marker3.id">
+        </marker>
+    </google-map>
+</ion-view>
+
+<!--
+<google-map center="map.center" zoom="map.zoom" draggable="true" draging="true"></google-map>
+-->
